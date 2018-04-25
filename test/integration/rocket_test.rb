@@ -268,5 +268,4 @@ class SlackTest < ActiveSupport::TestCase
     words[rand(words.length)]
   end
 
-
 end

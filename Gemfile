@@ -103,9 +103,9 @@ gem 'icalendar-recurrence'
 # integrations
 gem 'clearbit'
 gem 'net-ldap'
+gem 'rocket-chat-notifier'
 gem 'slack-notifier'
 gem 'zendesk_api'
-gem 'rocket-chat-notifier'
 
 # integrations - exchange
 gem 'autodiscover', git: 'https://github.com/thorsteneckel/autodiscover.git'

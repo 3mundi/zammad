@@ -39,7 +39,6 @@ class AddRocketchatIntegration < ActiveRecord::Migration[4.2]
 
     Translation.sync
 
-
   end
 
-end 
+end
