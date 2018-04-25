@@ -3626,6 +3626,56 @@ Setting.create_if_not_exists(
   frontend: false,
 )
 Setting.create_if_not_exists(
+  title: 'Defines transaction backend.',
+  name: '6300_rocket_webhook',
+  area: 'Transaction::Backend::Async',
+  description: 'Defines the transaction backend which posts messages to Rocket Chat (https://rocket.chat).',
+  options: {},
+  state: 'Transaction::Rocket',
+  frontend: false
+)
+Setting.create_if_not_exists(
+  title: 'Rocket integration',
+  name: 'rocket_integration',
+  area: 'Integration::Switch',
+  description: 'Defines if Rocket Chat (https://rocket.chat) is enabled or not.',
+  options: {
+    form: [
+      {
+        display: '',
+        null: true,
+        name: 'rocket_integration',
+        tag: 'boolean',
+        options: {
+          true  => 'yes',
+          false => 'no',
+        },
+      },
+    ],
+  },
+  state: false,
+  preferences: {
+    prio: 1,
+    permission: ['admin.integration'],
+  },
+  frontend: false
+)
+Setting.create_if_not_exists(
+  title: 'Rocket config',
+  name: 'rocket_config',
+  area: 'Integration::Rocket',
+  description: 'Defines the Rocket Chat config.',
+  options: {},
+  state: {
+    items: []
+  },
+  preferences: {
+    prio: 2,
+    permission: ['admin.integration'],
+  },
+  frontend: false,
+)
+Setting.create_if_not_exists(
   title: 'sipgate.io integration',
   name: 'sipgate_integration',
   area: 'Integration::Switch',

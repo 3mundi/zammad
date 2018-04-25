@@ -105,6 +105,7 @@ gem 'clearbit'
 gem 'net-ldap'
 gem 'slack-notifier'
 gem 'zendesk_api'
+gem 'rocket-chat-notifier'
 
 # integrations - exchange
 gem 'autodiscover', git: 'https://github.com/thorsteneckel/autodiscover.git'

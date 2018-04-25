@@ -340,6 +340,7 @@ GEM
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
     retriable (2.1.0)
+    rocket-chat-notifier (0.1.0)
     rspec-core (3.7.0)
       rspec-support (~> 3.7.0)
     rspec-expectations (3.7.0)
@@ -521,6 +522,7 @@ DEPENDENCIES
   rails (= 5.1.5)
   rails-observers
   rb-fsevent
+  rocket-chat-notifier
   rspec-rails
   rubocop
   rubyntlm!
