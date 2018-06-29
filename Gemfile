@@ -107,6 +107,7 @@ gem 'telephone_number'
 # integrations
 gem 'clearbit'
 gem 'net-ldap'
+gem 'rocket-chat-notifier'
 gem 'slack-notifier'
 gem 'zendesk_api'
 
